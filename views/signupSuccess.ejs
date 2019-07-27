@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link href = "/styles.css" rel="stylesheet" type= "text/css" />
+    </head>
+    <body>
+        <% include partial/navi.ejs %> 
+        <h1> Sign Up Successful</h1>
+        <p>Thanks for Signing Up</p>
+        <p> Username: <%= data.username%> <br> Password: <%= data.password%></p>
+        <p>We will be in touch with you through <%=data.email%></p>
+
+    </body>
+</html>

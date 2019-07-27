@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link href = "/styles.css" rel="stylesheet" type= "text/css" />
+    </head>
+    <body>
+        <% include partial/navi.ejs %> 
+        <h1> Sign Up </h1>
+        <p> <%= msg%> </p>
+        <!-- <p> Fill your details below to sign up </p> -->
+        <form id = "SignUp-form" method="POST" action="/signup">
+            <label for="username">Username</label>
+            <br>
+            <input type = "text" name="username" value="<%= qs.username%>">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type = "password" name="password" value="<%= qs.password%>">
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type = "email" name="email" value="<%= qs.email%>">
+            <br>
+            <br>
+            <input type = "submit" value="Sign Up"/>
+        </form>
+    </body>
+</html>

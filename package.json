@@ -1,0 +1,19 @@
+{
+  "name": "kmc",
+  "version": "1.0.0",
+  "description": "Simple login and sign up app",
+  "main": "login.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "keeran",
+  "license": "ISC"
+}

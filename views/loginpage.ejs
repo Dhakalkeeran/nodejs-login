@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link href = "/styles.css" rel="stylesheet" type= "text/css" />
+    </head>
+    <body>
+        <% include partial/navi.ejs %> 
+        <h1> Login </h1>
+        <p> <%= msg%> </p>
+        <!-- <p> Enter your Login Credentials </p> -->
+
+        <form id = "Login-form" method="POST" action="/">
+            <label for="username">Username</label>
+            <br>
+            <input type = "text" name="username" value="<%= qs.username%>">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type = "password" name="password" value="<%= qs.password%>">
+            <br>
+            <br>
+            <input type = "submit" value="Login"/>
+        </form>
+    </body>
+</html>
